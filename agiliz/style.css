@@ -1,0 +1,52 @@
+.slider{
+    height: 600px;
+    background-position-y: 0px;
+    top: 60px;
+    margin-bottom: 60px;
+}
+.slider-text{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 20%;
+}
+.brand-content{
+    padding: auto;
+}
+.adrs{
+    padding-right: 850px;
+    
+    padding-bottom: 20px;
+    color: black;
+}
+address{
+    font-style: italic;
+ }
+.table table-striped{
+    align-items: center;
+}
+.strong{
+    font-style: oblique;
+    font-weight: normal;
+}
+.btn btn-primary{
+    align-items:center;
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+    }
+    
+    
+    .carousel-caption h1 {
+    text-shadow: 1px 1px 15px #000;
+    }
+.formstyle{
+    color: aqua;
+    
+}
+.formselect{
+    font-size: 100px;
+}
+
