@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <link href="style.css" rel="stylesheet">
+</head>
+<script type="text/javascript">
+
+  function numvalidate(){
+      var num=document.getElementById("inputNumber").value;
+    if(isNaN(num)){
+      document.getElementById("numloc").innerHTML="Enter Nuumber Only";
+      // return true ;
+    }
+    else{ 
+    document.quizButton.submit();
+    }
+  }  
+</script>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-primary font-weight-bold" href="#"><img src="images/agiliz.png" height="40"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  
+                </ul>
+            </div>
+        </div>	
+        </nav>
+<div class="container">
+  <h2>REGISTER PAGE</h2>
+  <form class="form-horizontal slider" style="background-image: url('images/slider1.jpg');" action="/index.html">
+    <div class="formstyle">
+      <div class="form-group " >
+        <label class="control-label col-sm-2" for="fullname">fullname:</label>
+        <div class="col-sm-10">
+        <input type="text" class="form-control" id="fullname" placeholder="Enter fullname" name="username" required>
+      </div>
+    </div>
+    <form class="form-horizontal slider" style="background-image: url('images/slider1.jpg');" action="/index.html">
+        <div class="formstyle">
+          <div class="form-group " >
+            <label class="control-label col-sm-2" for="contact num">contact num:</label>
+            <div class="col-sm-10">
+              
+            <form name="myform" onclick= numvalidate()>
+           Nuumber: <input type="text" name="num" id="inputNumber" required>
+           <span id="numloc"> </span></form><br/>
+          </form>
+        </div>
+        </div>
+      </div>
+    <div class="form-group " >
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+    </div>
+    <div class="form-check" style="padding: 5px;">
+        <div class="col-sm-10">
+            <label class="control-label col-sm-2" for="email">Gender:</label>
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Male
+        </label> &nbsp; &nbsp;
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+         Female
+        </label>
+      </div>
+    </div>
+    <div class="form-group " >
+        <div class="col-sm-10">
+          <select class="form-select" id= "branch" aria-label="Default select example" required>
+            <option selected> skills(Frontend/Backend) </option>
+            <option value="1">Html</option>
+            <option value="2">CSS</option>
+            <option value="3">Javascript</option>
+          </select>
+      </div>
+      <div class="form-group">        
+        <div class="col-sm-offset-2 col-sm-10">
+            
+          <button type="submit" formaction="login.html" class="btn btn-default">Plese Login</button>
+          
+        </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button id="quizButton" name="quizButton" type="submit" formaction="quiz.html" class="btn btn-default" > <a href="javascript: numvalidate()"/> Register </a></button>
+      </div>
+    </div>
+  </div>
+  </form>
+</div>
+
+</body>
+</html>
